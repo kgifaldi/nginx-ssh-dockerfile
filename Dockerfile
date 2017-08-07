@@ -35,7 +35,7 @@ Commands:\n\
 ...\n\
 ```\n\
 \n\
-\### Aliasing to "au2" \n\
+### Aliasing to "au2" \n\
 \n\
 If you want to use the toolbelt executable from any folder, you will need to add an alias to your ~/.bashrc file. You can do this by navigating to the where the toolbelt executable exists (probably in your downloads folder), then entering these two commands (**after changing the \<OS\> to macos/linux/win.exe**) into the terminal: \n\
 \n\
