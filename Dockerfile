@@ -7,4 +7,5 @@ CMD echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config
 CMD mkdir /home/jenkins/
 CMD mkdir /home/jenkins/public/
 CMD mkdir /home/jenkins/public/toolbelt/
-CMD /etc/init.d/ssh start
+RUN /etc/init.d/ssh stop
+RUN /etc/init.d/ssh start
