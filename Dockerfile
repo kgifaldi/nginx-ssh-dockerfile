@@ -6,7 +6,6 @@ RUN echo 'server { listen       80; location / { root   /home/jenkins/public; in
 RUN echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config
 RUN mkdir /home/jenkins/
 RUN mkdir /home/jenkins/public/
-RUN mkdir /home/jenkins/private/
 RUN mkdir /home/jenkins/public/toolbelt/
 RUN mkdir /home/jenkins/public/toolbelt/README/
 RUN curl https://bitbucket.org/kgifaldi/nginx-readme/raw/0d843e02521d592626c654de2321c4877c83cd91/README.html > /home/jenkins/public/toolbelt/README/README.html
