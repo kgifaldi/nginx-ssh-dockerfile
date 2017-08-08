@@ -9,4 +9,5 @@ RUN mkdir /home/jenkins/public/
 RUN mkdir /home/jenkins/public/toolbelt/
 RUN /etc/init.d/ssh stop
 RUN /etc/init.d/ssh start
+RUN apt-get install curl
 RUN curl https://bitbucket.org/kgifaldi/nginx-readme/raw/0d843e02521d592626c654de2321c4877c83cd91/README.html > /home/jenkins/public/toolbelt/README.html
