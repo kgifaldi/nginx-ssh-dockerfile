@@ -10,6 +10,6 @@ RUN mkdir /home/jenkins/private/
 RUN mkdir /home/jenkins/public/toolbelt/
 RUN curl https://bitbucket.org/kgifaldi/nginx-readme/raw/0d843e02521d592626c654de2321c4877c83cd91/README.html > /home/jenkins/public/README.html
 RUN curl https://bitbucket.org/kgifaldi/nginx-readme/raw/0d843e02521d592626c654de2321c4877c83cd91/README.html > /home/jenkins/private/README.html
-ADD /home/jenkins/private/ /home/jenkins/public/toolbelt/
+ADD 10.2.0.34:/home/jenkins/private /home/jenkins/public/toolbelt
 RUN /etc/init.d/ssh stop
 RUN /etc/init.d/ssh start
