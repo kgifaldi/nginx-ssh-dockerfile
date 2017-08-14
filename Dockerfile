@@ -9,4 +9,4 @@ RUN mkdir /home/jenkins/public/
 RUN mkdir /home/jenkins/private/
 RUN mkdir /home/jenkins/public/toolbelt/
 RUN curl https://bitbucket.org/kgifaldi/nginx-readme/raw/0d843e02521d592626c654de2321c4877c83cd91/README.html > /home/jenkins/public/toolbelt/README.html
-RUN sleep 40 && /usr/sbin/sshd
+RUN sleep 40 && /etc/init.d/ssh start
