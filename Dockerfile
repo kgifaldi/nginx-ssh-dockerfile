@@ -10,5 +10,4 @@ RUN mkdir /home/jenkins/private/
 RUN mkdir /home/jenkins/public/toolbelt/
 RUN curl https://bitbucket.org/kgifaldi/nginx-readme/raw/0d843e02521d592626c654de2321c4877c83cd91/README.html > /home/jenkins/public/toolbelt/README.html
 RUN curl https://raw.githubusercontent.com/kgifaldi/nginx-ssh-dockerfile/master/run_servers.sh > /run_servers.sh
-RUN chmod +x /run_servers.sh
-RUN sleep 40 && sh -c /runServers.sh
+CMD echo "Hello world"
